@@ -1,0 +1,9 @@
+[config]
+
+name="GameServices"
+binary_type="local"
+binary="gameservices-debug.aar"
+
+[dependencies]
+
+remote=["com.google.android.gms:play-services-games-v2:+"]

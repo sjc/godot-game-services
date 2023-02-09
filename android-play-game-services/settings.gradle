@@ -1,0 +1,4 @@
+rootProject.name='gameservices'
+include ':app'
+include ':godot-lib'
+include ':gameservices'

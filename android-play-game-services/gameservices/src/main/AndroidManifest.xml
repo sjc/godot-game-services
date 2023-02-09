@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.jaml.gameservices">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application>
+        <meta-data
+            android:name="org.godotengine.plugin.v1.GameServices"
+            android:value="uk.co.jaml.gameservices.GameServices" />
+    </application>
+
+</manifest>

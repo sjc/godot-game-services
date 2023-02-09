@@ -1,0 +1,22 @@
+[config]
+name="GameServices"
+binary="gameservices/bin/gameservices.a"
+
+initialization="register_gameservices_types"
+deinitialization="unregister_gameservices_types"
+
+[dependencies]
+linked=[]
+embedded=[]
+system=["GameKit.framework"]
+
+capabilities=["gamekit"]
+
+files=[]
+
+linker_flags=["-ObjC"]
+
+;[plist]
+;Warning: You will need to update the [plist] section every time you reinstall/upgrade the plugin!
+;OPTIONAL: Won't be required until we implement Friends Lists
+;NSGKFriendListUsageDescription="Allow us to connect you to your Game Center friends."

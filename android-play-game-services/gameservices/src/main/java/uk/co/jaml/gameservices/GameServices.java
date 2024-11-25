@@ -176,6 +176,10 @@ public class GameServices extends org.godotengine.godot.plugin.GodotPlugin imple
 
                 // Continue with Play Games Services
                 PlayGames.getPlayersClient(aActivity).getCurrentPlayer().addOnCompleteListener(mTask -> {
+                    if (!mTask.isSuccessful()) {
+                        emitSignal("authorization_complete", isAuthenticated, new Dictionary());
+                        return;
+                    }
                     aLocalPlayer = mTask.getResult();
                     emitSignal("authorization_complete", isAuthenticated, dictionaryFromPlayer(aLocalPlayer));
                 });
